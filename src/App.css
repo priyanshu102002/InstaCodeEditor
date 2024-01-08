@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.homePageWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    color: #fff;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formWrapper{
+    background-color: #071d26;
+    padding: 20px;
+    border-radius: 10px;
+
+    width: 400px;
+    max-width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer{
+    position: fixed;
+    bottom: 2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer a{
+    color: #fcba04;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.mainLable{
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+.homePageLogo{
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.inputBox{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background-color: #eee;
+
+    font-size: 14px;
+}
+
+.btn{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.joinBtn{
+    background-color: #63fc04;
+    color: #000;
+    width: 100px;
+    margin-left: auto;
+}
+
+.joinBtn:hover{
+    background-color: #fcba04;
+}   
+
+.createInfo{
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.createNewBtn{
+    color: #fcba04;
+    text-decoration: none;
+
+
 }
