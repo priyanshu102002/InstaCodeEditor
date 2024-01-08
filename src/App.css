@@ -1,12 +1,12 @@
-.homePageWrapper{
+.homePageWrapper {
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     color: #fff;
     height: 100vh;
 }
 
-.formWrapper{
+.formWrapper {
     background-color: #071d26;
     padding: 20px;
     border-radius: 10px;
@@ -15,31 +15,31 @@
     max-width: 90%;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 2%;
 }
 
-footer a{
+footer a {
     color: #fcba04;
     text-decoration: none;
 }
 
-.mainLable{
+.mainLable {
     margin-bottom: 20px;
 }
 
-.inputGroup{
+.inputGroup {
     display: flex;
     flex-direction: column;
 }
 
-.homePageLogo{
+.homePageLogo {
     height: 80px;
     margin-bottom: 30px;
 }
 
-.inputBox{
+.inputBox {
     padding: 10px;
     border-radius: 5px;
     outline: none;
@@ -50,7 +50,7 @@ footer a{
     font-size: 14px;
 }
 
-.btn{
+.btn {
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -59,26 +59,88 @@ footer a{
     transition: 0.3s ease-in-out;
 }
 
-.joinBtn{
+.joinBtn {
     background-color: #63fc04;
     color: #000;
     width: 100px;
     margin-left: auto;
 }
 
-.joinBtn:hover{
+.joinBtn:hover {
     background-color: #fcba04;
-}   
-
-.createInfo{
-    margin: 0 auto;
-    margin-top: 20px;
-
 }
 
-.createNewBtn{
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
     color: #fcba04;
     text-decoration: none;
+}
 
+.editorWrapper {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 100vh;
+}
 
+.aside {
+    background-color: #071d26;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.asideInner {
+    flex: 1;
+}
+
+.clientList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.asideInner h3 {
+    margin: 10px 0;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.leaveBtn {
+    margin-top: 20px;
+    background-color: #63fc04;
+}
+
+.leaveBtn:hover {
+    background-color: #fcba04;
+}
+
+.CodeMirror {
+    font-size: 20px;
+    height: 100vh !important; 
+    line-height: 1.6;
+    padding-top: 20px;
 }
