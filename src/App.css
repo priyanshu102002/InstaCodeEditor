@@ -83,7 +83,6 @@ footer a {
 .editorWrapper {
     display: grid;
     grid-template-columns: 230px 1fr;
-    height: 100vh;
 }
 
 .aside {
@@ -140,7 +139,7 @@ footer a {
 
 .CodeMirror {
     font-size: 20px;
-    height: 100vh !important; 
+    height: 100vh !important;
     line-height: 1.6;
     padding-top: 20px;
 }

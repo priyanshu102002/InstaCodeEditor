@@ -22,7 +22,7 @@ const HomePage = () => {
             toast.error("Please fill all the fields!");
             return;
         }
-        // Navigate to the editor page
+        // Navigate to the editor page -> to get this we use useLocation hook in EditorPage.js
         navigate(`/editor/${roomId}`, {
             state: { userName },
         });
