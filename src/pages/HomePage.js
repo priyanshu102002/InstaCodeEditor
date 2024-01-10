@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const HomePage = () => {
     const [roomId, setRoomId] = useState("");
-    const [userName, setUserName] = useState("");
+    const [username, setUserName] = useState("");
     const navigate = useNavigate();
 
     const createNewRoom = (event) => {
@@ -18,13 +18,13 @@ const HomePage = () => {
     };
 
     const join = () => {
-        if (!roomId || !userName) {
+        if (!roomId || !username) {
             toast.error("Please fill all the fields!");
             return;
         }
         // Navigate to the editor page -> to get this we use useLocation hook in EditorPage.js
         navigate(`/editor/${roomId}`, {
-            state: { userName },
+            state: { username },
         });
     };
 
@@ -57,7 +57,7 @@ const HomePage = () => {
                         placeholder="USER NAME"
                         className="inputBox"
                         onChange={(e) => setUserName(e.target.value)}
-                        value={userName}
+                        value={username}
                         onKeyUp={enterHandler}
                     />
                     <button className="btn joinBtn" onClick={join}>
